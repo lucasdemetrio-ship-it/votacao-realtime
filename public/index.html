@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Votação em Tempo Real</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Votação em Tempo Real</h2>
+    <div id="status">Aguardando abertura...</div>
+
+    <button onclick="votar('A')">Votar em A</button>
+    <button onclick="votar('B')">Votar em B</button>
+    <button onclick="votar('C')">Votar em C</button>
+
+    <h3>Resultados</h3>
+    <div id="resultados">Nenhum voto ainda</div>
+  </div>
+
+</body>
+</html>

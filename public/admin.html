@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Painel Administrativo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Painel do Administrador</h2>
+
+    <div id="status">Aguardando ação...</div>
+
+    <button class="admin-btn" onclick="iniciar()">Iniciar Votação</button>
+    <button class="encerrar-btn" onclick="encerrar()">Encerrar Votação</button>
+
+    <h3>Resultados</h3>
+    <div id="resultados">Nenhum voto ainda</div>
+  </div>
+
+</body>
+</html>
